@@ -1,15 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./Styles/index.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
-import { BrowserRouter, Router } from "react-router-dom";
+import About from "./Pages/About";
+import Error from "./Composant/Error";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Router>
-      <Home />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/about" element={<About />} />
+        <Route element={<Error />} />
+      </Routes>
     </Router>
-  </React.StrictMode>,
-  document.getElementById("root")
+  </React.StrictMode>
 );
