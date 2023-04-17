@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
+.header-nav {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
