@@ -3,6 +3,7 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Error from "./Composant/Error";
 import Header from "./Composant/Header";
+import Footer from "./Composant/Footer";
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
           <Route path="*" element={<Error />} />
         </Routes>
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
