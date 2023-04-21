@@ -1,0 +1,21 @@
+.home {
+  display: flex;
+  margin-top: 4em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home__title {
+  color: black;
+  position: absolute;
+}
+
+.home__title__img {
+  position: relative;
+  width: 100%;
+  filter: brightness(0.8);
+  opacity: 30%;
+  border-radius: 25px;
+  height: 8em;
+  object-fit: cover;
+}

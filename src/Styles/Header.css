@@ -1,6 +1,6 @@
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-top: 20px;
 }
 
@@ -9,4 +9,17 @@
   align-content: center;
   flex-wrap: wrap;
   text-align: center;
+  font-size: 24px;
+}
+
+.header-accueil {
+  padding: 0 1em;
+}
+
+a {
+  text-decoration: none;
+  color: #ff6060;
+}
+a:hover {
+  text-decoration: underline;
 }
