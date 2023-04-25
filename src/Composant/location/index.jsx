@@ -1,6 +1,6 @@
 import logements from "../../datas/logement.json";
 import Card from "../card";
-import "../Styles/card.css";
+import "../../styles/card.css";
 
 function Location() {
   return (

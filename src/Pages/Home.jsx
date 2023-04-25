@@ -1,6 +1,6 @@
-import "../Styles/home.css";
-import home from "../Composant/Assets/home.png";
-import Location from "./location";
+import "../styles/home.css";
+import home from "../composant/assets/home.png";
+import Location from "../composant/location";
 
 function Home() {
   return (
