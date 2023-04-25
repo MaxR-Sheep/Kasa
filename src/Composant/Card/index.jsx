@@ -1,14 +1,15 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import "../../Styles/card.css";
 
 function Card({ product }) {
   return (
-    <div>
-      <Link to={`/logement/${product.id}`}>
-        <img src={product.cover} alt={product.title} />
-        <h3>{product.title}</h3>
-      </Link>
-    </div>
+    <Link to={`/logement/${product.id}`}>
+      <div className="card_link">
+        <img src={product.cover} alt={product.title} className="card_img" />
+        <h3 className="card_h3">{product.title}</h3>
+      </div>
+    </Link>
   );
 }
 

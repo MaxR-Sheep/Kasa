@@ -1,21 +1,32 @@
 .home {
-  display: flex;
   margin-top: 4em;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+}
+.title_home {
+  position: relative;
 }
 .home__title {
-  color: black;
+  color: #ffffff;
   position: absolute;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 143%;
+
+  top: 40px;
+  left: 25%;
 }
 
 .home__title__img {
-  position: relative;
   width: 100%;
-  filter: brightness(0.8);
-  opacity: 30%;
+
   border-radius: 25px;
-  height: 8em;
+  height: 223px;
   object-fit: cover;
+  filter: brightness(0.5);
+  opacity: 70%;
+}
+
+.home_section {
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  margin: 53px 0;
 }

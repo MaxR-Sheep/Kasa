@@ -1,9 +1,10 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home";
-import About from "./Pages/About";
+import Home from "./Pages/home";
+import About from "./Pages/about";
 import Error from "./Composant/Error";
 import Header from "./Composant/Header";
 import Footer from "./Composant/Footer";
+import Logement from "./Pages/logement";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="*" element={<Error />} />
-          {/* <Route path="/logement" element={<Location />} />  route à mofifier*/}
+          <Route path="/logement/:id" element={<Logement />} />
         </Routes>
       </main>
       <footer>
