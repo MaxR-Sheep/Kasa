@@ -7,8 +7,8 @@
   border-radius: 25px;
   height: 223px;
   object-fit: cover;
-  filter: brightness(0.5);
   opacity: 70%;
+  filter: brightness(0.8);
 }
 
 .banniere_title {
