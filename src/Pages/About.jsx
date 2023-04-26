@@ -1,9 +1,9 @@
 import Collapse from "../composant/collapse";
+import "../styles/about.css";
 
 function About() {
   return (
-    <div>
-      <h1>Page de A Propos 🏡</h1>
+    <div className="about">
       <Collapse
         title="Fiabilité"
         text=" Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."
