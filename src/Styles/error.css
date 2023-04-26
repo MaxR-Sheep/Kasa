@@ -1,0 +1,22 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error_404 {
+  font-size: 288px;
+  margin-bottom: 0;
+}
+
+.error_text {
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.error_link {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 10em;
+  text-decoration: underline;
+}

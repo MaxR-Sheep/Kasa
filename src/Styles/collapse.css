@@ -1,5 +1,5 @@
 .collapse {
-  margin: 31px;
+  margin: 3em;
   position: relative;
 }
 
@@ -17,9 +17,7 @@
 
 .collapse-open {
   border-radius: 5px;
-  padding: 18px;
+  padding: 37px 27px 20px;
   background-color: #f6f6f6;
-  position: absolute;
-  margin-top: -10px;
-  z-index: -1;
+  margin-top: -17px;
 }
