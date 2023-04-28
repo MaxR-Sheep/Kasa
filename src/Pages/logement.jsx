@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import logements from "../datas/logement.json";
 import Error from "../composant/error";
 import { useEffect, useState } from "react";
+import Collapse from "../composant/collapse";
 
 function Logement() {
   let { id } = useParams();
@@ -16,14 +17,29 @@ function Logement() {
       });
     }
   }, []);
+
   return (
     <div>
       {Object.keys(logement).length !== 0 ? (
         <div>
           carousel
           <article>
-            <h1>{logement.title}</h1>
-            <h3>{logement.location}</h3>
+            <div>
+              <div>
+                <h1>{logement.title}</h1>
+                <h3>{logement.location}</h3>
+              </div>
+
+              <div>
+                <p>{logement.host.name}</p>
+                <img src={logement.host.picture} alt={logement.host.name} />
+              </div>
+            </div>
+
+            <div>
+              <Collapse title="Description" children={logement.description} />
+              <Collapse title="Équipements" children={logement.equipments} />
+            </div>
           </article>
         </div>
       ) : (
