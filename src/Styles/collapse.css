@@ -1,6 +1,7 @@
 .collapse {
-  margin: 3em;
+  margin-bottom: 3em;
   position: relative;
+  width: 100%;
 }
 
 .collapse_close {
@@ -21,4 +22,9 @@
   padding: 37px 27px 20px;
   background-color: #f6f6f6;
   margin-top: -17px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
 }

@@ -5,7 +5,7 @@ import "../styles/about.css";
 
 function About() {
   return (
-    <div className="about">
+    <div className="about_banniere">
       <Banniere img={imgAbout} text="" />
       <div className="about">
         <Collapse

@@ -5,21 +5,25 @@ import Error from "./composant/error";
 import Header from "./composant/header";
 import Footer from "./composant/footer";
 import Logement from "./pages/logement";
+import "./styles/app.css";
 
 function App() {
   return (
     <div>
-      <header>
-        <Header />
-      </header>
-      <main>
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="*" element={<Error />} />
-          <Route path="/logement/:id" element={<Logement />} />
-        </Routes>
-      </main>
+      <div className="app">
+        <header>
+          <Header />
+        </header>
+        <main>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="*" element={<Error />} />
+            <Route path="/logement/:id" element={<Logement />} />
+          </Routes>
+        </main>
+      </div>
+
       <footer>
         <Footer />
       </footer>

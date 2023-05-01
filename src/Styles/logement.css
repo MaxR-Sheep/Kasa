@@ -1,0 +1,7 @@
+.logement_collapse {
+  display: flex;
+  justify-content: space-between;
+}
+.logement_collapse_div {
+  width: 48%;
+}

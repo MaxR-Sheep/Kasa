@@ -3,6 +3,7 @@ import logements from "../datas/logement.json";
 import Error from "../composant/error";
 import { useEffect, useState } from "react";
 import Collapse from "../composant/collapse";
+import "../styles/logement.css";
 
 function Logement() {
   let { id } = useParams();
@@ -36,9 +37,13 @@ function Logement() {
               </div>
             </div>
 
-            <div>
-              <Collapse title="Description" children={logement.description} />
-              <Collapse title="Équipements" children={logement.equipments} />
+            <div className="logement_collapse">
+              <div className="logement_collapse_div">
+                <Collapse title="Description" children={logement.description} />
+              </div>
+              <div className="logement_collapse_div">
+                <Collapse title="Équipements" children={logement.equipments} />
+              </div>
             </div>
           </article>
         </div>
