@@ -7,16 +7,31 @@
   border-radius: 25px;
   height: 223px;
   object-fit: cover;
-  opacity: 70%;
+  opacity: 80%;
   filter: brightness(0.8);
 }
 
 .banniere_title {
   color: #ffffff;
   position: absolute;
+
   font-size: 48px;
   font-weight: 500;
   line-height: 143%;
   top: 40px;
-  left: 20%;
+  left: 10%;
+}
+
+@media screen and (max-width: 750px) {
+  .banniere_img {
+    border-radius: 10px;
+    height: 111px;
+  }
+  .banniere_title {
+    width: 217px;
+    font-size: 24px;
+    top: 10px;
+    line-height: 24px;
+    left: 5%;
+  }
 }

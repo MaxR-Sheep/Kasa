@@ -9,12 +9,12 @@ function Header() {
         <img
           src={logo}
           alt="Kasa location d'appartements"
-          className="header-logo"
+          className="header_logo"
         />
       </Link>
 
-      <nav className="header-nav">
-        <Link to="/" className="header-accueil">
+      <nav className="header_nav">
+        <Link to="/" className="header_accueil">
           Accueil
         </Link>
         <Link to="/about">A Propos</Link>

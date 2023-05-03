@@ -41,7 +41,7 @@ function Collapse({ title, children }) {
         )}
       </button>
       {isOpen && (
-        <div className="collapse-open">
+        <div className="collapse_open">
           {typeof children === "string" ? (
             <StringComponent text={children} />
           ) : (

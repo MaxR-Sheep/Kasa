@@ -2,26 +2,47 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 50px;
 }
+
 .card_link {
-  position: relative;
   width: 340px;
   height: 340px;
   border-radius: 10px;
-  margin: 0 25px 50px;
-  background-size: cover;
-  background-position: center center;
+  margin: 50px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+}
+
+.card_img {
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  object-fit: cover;
+  position: relative;
+  filter: opacity(0.8);
 }
 
 .card_h3 {
-  width: 260px;
-  position: absolute;
+  width: 80%;
   color: #ffffff;
-  bottom: 20px;
+  position: relative;
+  bottom: 100px;
   left: 40px;
 }
 
 .card_h3:hover {
   color: #ff6060;
+}
+
+@media screen and (max-width: 750px) {
+  .card_link {
+    width: 100%;
+    margin: 20px 0 0;
+  }
+  .card_img {
+    width: 100%;
+  }
 }

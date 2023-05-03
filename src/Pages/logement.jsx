@@ -4,6 +4,7 @@ import Error from "../composant/error";
 import { useEffect, useState } from "react";
 import Collapse from "../composant/collapse";
 import "../styles/logement.css";
+import Carousel from "../composant/carousel";
 
 function Logement() {
   let { id } = useParams();
@@ -23,7 +24,7 @@ function Logement() {
     <div>
       {Object.keys(logement).length !== 0 ? (
         <div>
-          carousel
+          <Carousel />
           <article>
             <div>
               <div>

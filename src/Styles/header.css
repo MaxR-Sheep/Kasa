@@ -4,7 +4,12 @@
   padding-top: 20px;
 }
 
-.header-nav {
+.header_logo {
+  height: 60px;
+  width: 90%;
+}
+
+.header_nav {
   display: flex;
   align-content: center;
   flex-wrap: wrap;
@@ -12,7 +17,7 @@
   font-size: 24px;
 }
 
-.header-accueil {
+.header_accueil {
   padding: 0 2em;
 }
 
@@ -24,4 +29,15 @@ a {
 }
 a:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 750px) {
+  .header_logo {
+    height: 43px;
+    width: 100%;
+  }
+
+  .header_nav {
+    font-size: 12px;
+  }
 }
