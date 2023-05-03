@@ -4,7 +4,7 @@ import Error from "../composant/error";
 import { useEffect, useState } from "react";
 import Collapse from "../composant/collapse";
 import "../styles/logement.css";
-import Carousel from "../composant/carousel";
+import Carousel from "../composant/slideshow";
 
 function Logement() {
   let { id } = useParams();
