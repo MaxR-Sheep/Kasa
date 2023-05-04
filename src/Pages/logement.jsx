@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import logements from "../datas/logement.json";
-import Error from "../composant/error";
+import Error from "./error";
 import { useEffect, useState } from "react";
 import Collapse from "../composant/collapse";
 import "../styles/logement.css";
