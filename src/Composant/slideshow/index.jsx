@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import logements from "../../datas/logement.json";
 import { useParams } from "react-router-dom";
-import Vector from "../assets/vector.png";
+import Arrow from "../assets/arrow.png";
 import "../../styles/slideshow.css";
 
 function Carousel() {
@@ -33,11 +33,11 @@ function Carousel() {
     <div>
       <div className="slider">
         <button onClick={previous} className="vector_btn_previous">
-          <img src={Vector} alt="" className="vector_previous" />
+          <img src={Arrow} alt="" className="vector_previous" />
         </button>
         {<img src={imagesUrl[index]} alt="" className="slider_img" />}
         <button onClick={next} className="vector_btn_next">
-          <img src={Vector} alt="" className="vector_next" />
+          <img src={Arrow} alt="" className="vector_next" />
         </button>
       </div>
       <div className="point_img">

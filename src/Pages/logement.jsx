@@ -22,24 +22,22 @@ function Logement() {
   }, []);
 
   return (
-    <div>
+    <section>
       {Object.keys(logement).length !== 0 ? (
         <div>
           <Carousel />
           <article>
             <div>
-              <div>
-                <h1>{logement.title}</h1>
-                <h3>{logement.location}</h3>
-                {logement.tags.map((tags, index) => {
-                  return <Tags key={index} text={tags} />;
-                })}
-              </div>
+              <h1>{logement.title}</h1>
+              <h3>{logement.location}</h3>
+              {logement.tags.map((tags, index) => {
+                return <Tags key={index} text={tags} />;
+              })}
+            </div>
 
-              <div>
-                <p>{logement.host.name}</p>
-                <img src={logement.host.picture} alt={logement.host.name} />
-              </div>
+            <div>
+              <p>{logement.host.name}</p>
+              <img src={logement.host.picture} alt={logement.host.name} />
             </div>
 
             <div className="logement_collapse">
@@ -63,7 +61,7 @@ function Logement() {
       ) : (
         <Error />
       )}
-    </div>
+    </section>
   );
 }
 
