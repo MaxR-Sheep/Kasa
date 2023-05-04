@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Collapse from "../composant/collapse";
 import "../styles/logement.css";
 import Carousel from "../composant/slideshow";
+import Tags from "../composant/tags";
 
 function Logement() {
   let { id } = useParams();
@@ -30,6 +31,9 @@ function Logement() {
               <div>
                 <h1>{logement.title}</h1>
                 <h3>{logement.location}</h3>
+                {logement.tags.map((tags, index) => {
+                  return <Tags key={index} text={tags} />;
+                })}
               </div>
 
               <div>
@@ -40,10 +44,18 @@ function Logement() {
 
             <div className="logement_collapse">
               <div className="logement_collapse_div">
-                <Collapse title="Description" children={logement.description} />
+                <Collapse
+                  title="Description"
+                  children={logement.description}
+                  className="collapse_log"
+                />
               </div>
               <div className="logement_collapse_div">
-                <Collapse title="Équipements" children={logement.equipments} />
+                <Collapse
+                  title="Équipements"
+                  children={logement.equipments}
+                  className="collapse_log"
+                />
               </div>
             </div>
           </article>
