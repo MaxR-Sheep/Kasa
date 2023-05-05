@@ -1,8 +1,22 @@
 import React from "react";
-import Star from "../assets/star.png";
+import StarEmpty from "../assets/star.png";
+import StarFull from "../assets/starfull.png";
 
 function Rating({ value }) {
-  const stars = [1, 2, 3, 4, 5];
+  const totalStars = 5;
+  const activeStar = value;
 
-  return <div>{}</div>;
+  return (
+    <div>
+      {[...new Array(totalStars)].map((arr, index) => {
+        return index < activeStar ? (
+          <img src={StarFull} />
+        ) : (
+          <img src={StarEmpty} />
+        );
+      })}
+    </div>
+  );
 }
+
+export default Rating;

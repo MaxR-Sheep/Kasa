@@ -6,6 +6,7 @@ import Collapse from "../composant/collapse";
 import "../styles/logement.css";
 import Carousel from "../composant/slideshow";
 import Tags from "../composant/tags";
+import Rating from "../composant/star";
 
 function Logement() {
   let { id } = useParams();
@@ -38,6 +39,7 @@ function Logement() {
             <div>
               <p>{logement.host.name}</p>
               <img src={logement.host.picture} alt={logement.host.name} />
+              <Rating value={logement.rating} />
             </div>
 
             <div className="logement_collapse">
