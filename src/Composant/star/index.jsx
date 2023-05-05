@@ -10,9 +10,9 @@ function Rating({ value }) {
     <div>
       {[...new Array(totalStars)].map((arr, index) => {
         return index < activeStar ? (
-          <img src={StarFull} />
+          <img src={StarFull} alt="" />
         ) : (
-          <img src={StarEmpty} />
+          <img src={StarEmpty} alt="" />
         );
       })}
     </div>

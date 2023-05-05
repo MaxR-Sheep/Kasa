@@ -7,6 +7,7 @@ import "../styles/logement.css";
 import Carousel from "../composant/slideshow";
 import Tags from "../composant/tags";
 import Rating from "../composant/star";
+import Particulier from "../composant/particulier";
 
 function Logement() {
   let { id } = useParams();
@@ -28,18 +29,26 @@ function Logement() {
         <div>
           <Carousel />
           <article>
-            <div>
-              <h1>{logement.title}</h1>
-              <h3>{logement.location}</h3>
-              {logement.tags.map((tags, index) => {
-                return <Tags key={index} text={tags} />;
-              })}
-            </div>
+            <div className="log_info">
+              <div className="logement_titre">
+                <h1>{logement.title}</h1>
+                <p>{logement.location}</p>
+                <div className="log_tag">
+                  {logement.tags.map((tags, index) => {
+                    return <Tags key={index} text={tags} />;
+                  })}
+                </div>
+              </div>
 
-            <div>
-              <p>{logement.host.name}</p>
-              <img src={logement.host.picture} alt={logement.host.name} />
-              <Rating value={logement.rating} />
+              <div>
+                <Particulier
+                  name={logement.host.name}
+                  picture={logement.host.picture}
+                />
+                <div>
+                  <Rating value={logement.rating} />
+                </div>
+              </div>
             </div>
 
             <div className="logement_collapse">

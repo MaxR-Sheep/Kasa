@@ -1,3 +1,16 @@
+.logement_titre {
+  display: flex;
+  flex-direction: column;
+}
+
+.log_info {
+  display: flex;
+  justify-content: space-between;
+}
+.log_tag {
+  display: flex;
+}
+
 .logement_collapse {
   display: flex;
   justify-content: space-between;

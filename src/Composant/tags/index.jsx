@@ -1,5 +1,7 @@
+import "../../styles/tags.css";
+
 function Tags({ text }) {
-  return <div>{text}</div>;
+  return <div className="tags">{text}</div>;
 }
 
 export default Tags;
