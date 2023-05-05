@@ -3,8 +3,8 @@ import "../../styles/particulier.css";
 function Particulier({ name, picture }) {
   return (
     <div className="particulier">
-      <p>{name}</p>
-      <img src={picture} alt={name} />
+      <p className="part_name">{name}</p>
+      <img src={picture} alt={name} className="part_img" />
     </div>
   );
 }

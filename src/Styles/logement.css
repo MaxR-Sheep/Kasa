@@ -6,9 +6,20 @@
 .log_info {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.log_h1 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 51px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
 }
 .log_tag {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .logement_collapse {
@@ -17,6 +28,7 @@
 }
 .logement_collapse_div {
   width: 48%;
+  margin-top: 20px;
 }
 
 .collapse_log {

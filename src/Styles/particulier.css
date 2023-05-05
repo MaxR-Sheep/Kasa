@@ -1,3 +1,13 @@
 .particulier {
   display: flex;
+  align-items: center;
+}
+
+.part_name {
+  margin-right: 10px;
+}
+.part_img {
+  height: 64px;
+  width: 64px;
+  border-radius: 40px;
 }

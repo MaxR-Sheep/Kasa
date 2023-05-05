@@ -31,7 +31,7 @@ function Logement() {
           <article>
             <div className="log_info">
               <div className="logement_titre">
-                <h1>{logement.title}</h1>
+                <h1 className="log_h1">{logement.title}</h1>
                 <p>{logement.location}</p>
                 <div className="log_tag">
                   {logement.tags.map((tags, index) => {
@@ -39,7 +39,6 @@ function Logement() {
                   })}
                 </div>
               </div>
-
               <div>
                 <Particulier
                   name={logement.host.name}
