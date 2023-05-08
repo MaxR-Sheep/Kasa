@@ -22,7 +22,7 @@
   left: 10%;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 900px) {
   .banniere_img {
     border-radius: 10px;
     height: 111px;

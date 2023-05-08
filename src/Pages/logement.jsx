@@ -39,7 +39,7 @@ function Logement() {
                   })}
                 </div>
               </div>
-              <div>
+              <div className="log_particulier">
                 <Particulier
                   name={logement.host.name}
                   picture={logement.host.picture}

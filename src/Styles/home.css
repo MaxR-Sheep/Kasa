@@ -8,7 +8,7 @@
   margin: 53px 0;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 900px) {
   .home_section {
     background-color: white;
     margin: 0;

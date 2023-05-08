@@ -1,11 +1,13 @@
 .logement_titre {
   display: flex;
   flex-direction: column;
+  width: 65%;
 }
 
 .log_info {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -33,4 +35,26 @@
 
 .collapse_log {
   font-size: 18px;
+}
+
+@media screen and (max-width: 900px) {
+  .logement_titre {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .log_info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .log_particulier {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 16px;
+  }
 }

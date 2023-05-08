@@ -1,6 +1,7 @@
 import React from "react";
 import StarEmpty from "../assets/star.png";
 import StarFull from "../assets/starfull.png";
+import "../../styles/star.css";
 
 function Rating({ value }) {
   const totalStars = 5;
@@ -10,9 +11,9 @@ function Rating({ value }) {
     <div>
       {[...new Array(totalStars)].map((arr, index) => {
         return index < activeStar ? (
-          <img src={StarFull} alt="" />
+          <img key={index} src={StarFull} alt="" className="star" />
         ) : (
-          <img src={StarEmpty} alt="" />
+          <img key={index} src={StarEmpty} alt="" className="star" />
         );
       })}
     </div>

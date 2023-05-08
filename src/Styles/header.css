@@ -6,7 +6,7 @@
 
 .header_logo {
   height: 60px;
-  width: 90%;
+  width: 100%;
 }
 
 .header_nav {
@@ -31,10 +31,9 @@ a:hover {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 900px) {
   .header_logo {
     height: 43px;
-    width: 100%;
   }
 
   .header_nav {

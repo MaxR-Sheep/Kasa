@@ -1,6 +1,7 @@
 .particulier {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .part_name {

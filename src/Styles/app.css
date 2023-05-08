@@ -2,7 +2,7 @@
   margin: 20px 100px;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 900px) {
   .app {
     margin: 20px 0;
   }

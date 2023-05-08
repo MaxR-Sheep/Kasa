@@ -37,7 +37,7 @@
   color: #ff6060;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 900px) {
   .card_link {
     width: 100%;
     margin: 20px 0 0;
