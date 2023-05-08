@@ -26,9 +26,22 @@
   background-color: #f6f6f6;
   font-weight: 400;
   margin-top: -17px;
+  font-size: 24px;
 }
 
 ul {
   list-style-type: none;
   padding: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .collapse {
+    margin-bottom: 1em;
+  }
+  .collapse_close {
+    font-size: 13px;
+  }
+  .collapse_open {
+    font-size: 13px;
+  }
 }

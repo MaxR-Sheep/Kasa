@@ -5,3 +5,9 @@
 .about {
   margin: 5% 5% 10%;
 }
+
+@media screen and (max-width: 900px) {
+  .about_banniere {
+    margin: 0 0 50px;
+  }
+}

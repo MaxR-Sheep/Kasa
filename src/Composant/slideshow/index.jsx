@@ -32,13 +32,14 @@ function Carousel() {
   return (
     <div>
       <div className="slider">
-        <button onClick={previous} className="vector_btn_previous">
-          <img src={Arrow} alt="" className="vector_previous" />
-        </button>
+        <img
+          src={Arrow}
+          alt=""
+          className="vector_previous"
+          onClick={previous}
+        />
         {<img src={imagesUrl[index]} alt="" className="slider_img" />}
-        <button onClick={next} className="vector_btn_next">
-          <img src={Arrow} alt="" className="vector_next" />
-        </button>
+        <img src={Arrow} alt="" onClick={next} className="vector_next" />
       </div>
       <div className="point_img">
         {imagesUrl.map((img, indexImg) => {

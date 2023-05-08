@@ -9,6 +9,9 @@
 }
 
 @media screen and (max-width: 900px) {
+  .home {
+    margin-top: 0;
+  }
   .home_section {
     background-color: white;
     margin: 0;

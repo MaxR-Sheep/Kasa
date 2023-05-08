@@ -3,10 +3,6 @@ import "../../styles/collapse.css";
 
 import vector from "../assets/vector.png";
 
-//déplacer les sous-éléments jsx en dehors du parent et passer les data en props est une bonne pratique
-//car React va rendre à la fois le jsx du "return" et les jsx des différents sous-éléments écrits dans le parent
-//cela peut entraîner des problèmes de performances et de qualité (C'est typiquement une alerte SonarCloud)
-
 const StringComponent = ({ text }) => {
   return <p>{text}</p>;
 };
