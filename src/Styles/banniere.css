@@ -14,12 +14,11 @@
 .banniere_title {
   color: #ffffff;
   position: absolute;
-
   font-size: 48px;
   font-weight: 500;
   line-height: 143%;
   top: 40px;
-  left: 10%;
+  left: 20%;
 }
 
 @media screen and (max-width: 900px) {
@@ -28,10 +27,15 @@
     height: 111px;
   }
   .banniere_title {
-    width: 217px;
     font-size: 24px;
-    top: 10px;
+    top: 25px;
     line-height: 24px;
-    left: 5%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .banniere_title {
+    top: 18px;
+    left: 15%;
+    width: 70%;
   }
 }

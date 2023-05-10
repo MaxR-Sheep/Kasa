@@ -28,30 +28,35 @@ function Carousel() {
     let updatedIndex = index - 1;
     updatedIndex < 0 ? setIndex(imagesUrl.length - 1) : setIndex(updatedIndex);
   };
-
-  return (
-    <div>
-      <div className="slider">
-        <img
-          src={Arrow}
-          alt=""
-          className="vector_previous"
-          onClick={previous}
-        />
-        {<img src={imagesUrl[index]} alt="" className="slider_img" />}
-        <img src={Arrow} alt="" onClick={next} className="vector_next" />
+  if (imagesUrl.length === 1) {
+    return (
+      <div>
+        <div className="slider">
+          {<img src={imagesUrl[index]} alt="" className="slider_img" />}
+        </div>
       </div>
-      <div className="point_img">
-        {imagesUrl.map((img, indexImg) => {
-          return (
-            <div key={indexImg}>
-              {indexImg === index ? <p>⚫</p> : <p>⚪</p>}
-            </div>
-          );
-        })}
+    );
+  } else {
+    return (
+      <div>
+        <div className="slider">
+          <img
+            src={Arrow}
+            alt=""
+            className="vector_previous"
+            onClick={previous}
+          />
+          {<img src={imagesUrl[index]} alt="" className="slider_img" />}
+          <img src={Arrow} alt="" onClick={next} className="vector_next" />
+        </div>
+        <div className="number_img">
+          <p>
+            {index + 1}/{imagesUrl.length}
+          </p>
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default Carousel;

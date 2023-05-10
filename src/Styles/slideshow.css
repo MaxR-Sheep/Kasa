@@ -27,12 +27,15 @@
   width: 47px;
 }
 
-.point_img {
+.number_img {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
   position: relative;
-  bottom: 50px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+  bottom: 60px;
 }
 
 @media screen and (max-width: 900px) {
