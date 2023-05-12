@@ -27,10 +27,11 @@
 .logement_collapse {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
+  margin-top: 20px;
 }
 .logement_collapse_div {
-  width: 48%;
-  margin-top: 20px;
+  width: 100%;
 }
 
 .collapse_log {
@@ -39,13 +40,9 @@
 
 @media screen and (max-width: 900px) {
   .logement_titre {
-    display: flex;
-    flex-direction: column;
     width: 100%;
   }
   .log_info {
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
   }
 
@@ -58,8 +55,7 @@
     margin-top: 16px;
   }
   .logement_collapse {
-    display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
   .logement_collapse_div {
     width: 100%;

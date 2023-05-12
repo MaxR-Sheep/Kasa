@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-bottom: 30px;
 }
 
 .slider_img {
@@ -35,7 +36,7 @@
   font-weight: 500;
   font-size: 18px;
   color: #ffffff;
-  bottom: 60px;
+  bottom: 80px;
 }
 
 @media screen and (max-width: 900px) {

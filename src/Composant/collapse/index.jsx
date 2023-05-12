@@ -29,19 +29,21 @@ function Collapse({ title, children }) {
         {isOpen ? (
           <img src={vector} alt="vecteur haut" />
         ) : (
-          <img
-            src={vector}
-            alt="vecteur bas"
-            style={{ transform: "rotate(180deg)" }}
-          />
+          <img src={vector} alt="vecteur bas" className="vector" />
         )}
       </button>
       {isOpen && (
         <div className="collapse_open">
           {typeof children === "string" ? (
-            <StringComponent text={children} />
+            <StringComponent
+              text={children} /* pour que le collapse s'adpate soit à du texte*/
+            />
           ) : (
-            <ArrayComponent list={children} />
+            <ArrayComponent
+              list={
+                children
+              } /*  soit à une liste dans un tableau selon le type */
+            />
           )}
         </div>
       )}

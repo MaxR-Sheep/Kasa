@@ -23,7 +23,7 @@ function Carousel() {
     let updatedIndex = index + 1;
     updatedIndex < imagesUrl.length ? setIndex(updatedIndex) : setIndex(0);
   };
-  setInterval(next, 4000);
+  //setInterval(next, 4000);
 
   const previous = () => {
     let updatedIndex = index - 1;
