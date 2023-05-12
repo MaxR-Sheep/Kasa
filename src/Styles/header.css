@@ -21,6 +21,15 @@
   padding: 0 2em;
 }
 
+.header_accueil_active {
+  padding: 0 2em;
+  text-decoration: underline;
+}
+
+.header_about_active {
+  text-decoration: underline;
+}
+
 a {
   text-decoration: none;
   color: #ff6060;
