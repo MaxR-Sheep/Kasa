@@ -13,6 +13,7 @@ function Logement() {
   let { id } = useParams();
   const [logement, setLogement] = useState({});
 
+  // hook pour récupere l'id pour chaque objet
   useEffect(() => {
     if (id) {
       logements.forEach((obj) => {

@@ -4,6 +4,7 @@ import imgAbout from "../composant/assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.pn
 import "../styles/about.css";
 
 function About() {
+  //utilisation de prop pour les collapses spécifique et modifiable
   return (
     <div className="about_banniere">
       <Banniere img={imgAbout} text="" />
