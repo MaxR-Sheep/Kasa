@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import logements from "../../datas/logement.json";
 import { useParams } from "react-router-dom";
 import Arrow from "../assets/arrow.png";
+import vectorPrevious from "../assets/Vectorprevious.png";
 import "../../styles/slideshow.css";
 
 function Carousel() {
@@ -53,7 +54,7 @@ function Carousel() {
     return (
       <div className="slider">
         <img
-          src={Arrow}
+          src={vectorPrevious}
           alt=""
           className="vector_previous"
           onClick={previous}

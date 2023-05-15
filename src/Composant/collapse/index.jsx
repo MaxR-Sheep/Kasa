@@ -27,7 +27,7 @@ function Collapse({
   return (
     <div className="collapse">
       <button onClick={toggleCollapse} className="collapse_close">
-        <h3>{title}</h3>
+        {title}
 
         {isOpen ? (
           <img src={vector} alt="vecteur haut" />

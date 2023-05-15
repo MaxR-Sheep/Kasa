@@ -8,7 +8,7 @@ function Rating({ value }) {
   const activeStar = value;
 
   return (
-    <div>
+    <>
       {[...new Array(totalStars)].map((arr, index) => {
         return index < activeStar ? (
           <img key={index} src={StarFull} alt="" className="star" />
@@ -16,7 +16,7 @@ function Rating({ value }) {
           <img key={index} src={StarEmpty} alt="" className="star" />
         );
       })}
-    </div>
+    </>
   );
 }
 
