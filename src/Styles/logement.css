@@ -57,7 +57,4 @@
   .logement_collapse {
     flex-direction: column;
   }
-  .logement_collapse_div {
-    width: 100%;
-  }
 }

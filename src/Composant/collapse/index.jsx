@@ -17,7 +17,10 @@ const ArrayComponent = ({ list }) => {
   );
 };
 
-function Collapse({ title, children }) {
+function Collapse({
+  title,
+  children,
+}) /*utilisation de prop pour la modularité du composant */ {
   const [isOpen, setIsOpen] = useState(false);
   const toggleCollapse = () => setIsOpen(!isOpen);
 

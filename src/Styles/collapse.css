@@ -46,7 +46,7 @@ ul {
 
 @media screen and (max-width: 900px) {
   .collapse {
-    margin-bottom: 1em;
+    margin-bottom: 20px;
   }
   .collapse_close {
     font-size: 13px;

@@ -23,7 +23,20 @@ function Carousel() {
     let updatedIndex = index + 1;
     updatedIndex < imagesUrl.length ? setIndex(updatedIndex) : setIndex(0);
   };
-  //setInterval(next, 4000);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) =>
+        prevIndex === imagesUrl.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 3000);
+    return () =>
+      clearInterval(
+        interval
+      ); /* le clearInterval permet de remettre a 0 la fonction pour évité les problemes avec les functions next et previous */
+  }, [
+    imagesUrl.length,
+  ]); /* useEffect avec setInterval pour avoir un changement d'images avec un timer de 3000ms */
 
   const previous = () => {
     let updatedIndex = index - 1;
@@ -32,30 +45,25 @@ function Carousel() {
 
   if (imagesUrl.length === 1) {
     return (
-      <div>
-        <div className="slider">
-          {<img src={imagesUrl[index]} alt="" className="slider_img" />}
-        </div>
+      <div className="slider">
+        {<img src={imagesUrl[index]} alt="" className="slider_img" />}
       </div>
     );
   } else {
     return (
-      <div>
-        <div className="slider">
-          <img
-            src={Arrow}
-            alt=""
-            className="vector_previous"
-            onClick={previous}
-          />
-          {<img src={imagesUrl[index]} alt="" className="slider_img" />}
-          <img src={Arrow} alt="" onClick={next} className="vector_next" />
-        </div>
-        <div className="number_img">
-          <p>
-            {index + 1}/{imagesUrl.length}
-          </p>
-        </div>
+      <div className="slider">
+        <img
+          src={Arrow}
+          alt=""
+          className="vector_previous"
+          onClick={previous}
+        />
+        {<img src={imagesUrl[index]} alt="" className="slider_img" />}
+        <img src={Arrow} alt="" onClick={next} className="vector_next" />
+
+        <p className="number_img">
+          {index + 1}/{imagesUrl.length}
+        </p>
       </div>
     );
   }
