@@ -15,7 +15,7 @@ function Carousel() {
         }
       });
     }
-  }, []);
+  }, [id]);
 
   const [index, setIndex] = useState(0);
   const [imagesUrl, setImagesUrl] = useState([]);
