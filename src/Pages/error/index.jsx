@@ -3,7 +3,7 @@ import "../../styles/error.css";
 
 function Error() {
   return (
-    <div className="error">
+    <section className="error">
       <h1 className="error_404">404 </h1>
       <h2 className="error_text">
         {" "}
@@ -12,7 +12,7 @@ function Error() {
       <Link to="/" className="error_link">
         Retourner sur la page d’accueil
       </Link>
-    </div>
+    </section>
   );
 }
 

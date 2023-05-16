@@ -11,7 +11,7 @@ function Carousel() {
     if (id) {
       logements.forEach((obj) => {
         if (obj.id === id) {
-          setImagesUrl(obj.pictures);
+          setImagesUrl(obj.pictures); // hook qui permet de mettre à jour les images de la location
         }
       });
     }

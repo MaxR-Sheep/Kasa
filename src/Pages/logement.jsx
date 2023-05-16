@@ -4,14 +4,14 @@ import Error from "./error";
 import { useEffect, useState } from "react";
 import Collapse from "../composant/collapse";
 import "../styles/logement.css";
-import Carousel from "../composant/slideshow";
+import Slidershow from "../composant/slideshow";
 import Tags from "../composant/tags";
 import Rating from "../composant/star";
 import Particulier from "../composant/particulier";
 
 function Logement() {
-  let { id } = useParams();
-  const [logement, setLogement] = useState({});
+  let { id } = useParams(); // useParams permet de récupere l'ID dans la barre url
+  const [logement, setLogement] = useState({}); // modification de l'état
 
   // hook pour récupere l'id pour chaque objet
   useEffect(() => {
@@ -22,25 +22,25 @@ function Logement() {
         }
       });
     }
-  }, []);
+  }, [id]);
 
   return (
-    <section>
+    <div>
       {Object.keys(logement).length !== 0 ? (
         <div>
-          <Carousel />
+          <Slidershow /*ou Carousel */ />
           <article>
-            <div className="log_info">
+            <div className="logement_info">
               <div className="logement_titre">
-                <h1 className="log_h1">{logement.title}</h1>
+                <h2 className="logement_h2">{logement.title}</h2>
                 <p>{logement.location}</p>
-                <div className="log_tag">
+                <div className="logement_tag">
                   {logement.tags.map((tags, index) => {
                     return <Tags key={index} text={tags} />;
                   })}
                 </div>
               </div>
-              <div className="log_particulier">
+              <div className="logement_particulier">
                 <Particulier
                   name={logement.host.name}
                   picture={logement.host.picture}
@@ -72,7 +72,7 @@ function Logement() {
       ) : (
         <Error />
       )}
-    </section>
+    </div>
   );
 }
 

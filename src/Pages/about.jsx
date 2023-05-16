@@ -1,6 +1,6 @@
 import Banniere from "../composant/banniere";
 import Collapse from "../composant/collapse";
-import imgAbout from "../composant/assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png";
+import imgAbout from "../composant/assets/paysage_about.png";
 import "../styles/about.css";
 
 function About() {

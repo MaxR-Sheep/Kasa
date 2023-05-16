@@ -4,14 +4,14 @@
   width: 65%;
 }
 
-.log_info {
+.logement_info {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
 }
 
-.log_h1 {
+.logement_h2 {
   font-size: 36px;
   font-weight: 500;
   line-height: 51px;
@@ -19,7 +19,7 @@
   text-align: left;
   margin: 0;
 }
-.log_tag {
+.logement_tag {
   display: flex;
   flex-wrap: wrap;
 }
@@ -42,11 +42,11 @@
   .logement_titre {
     width: 100%;
   }
-  .log_info {
+  .logement_info {
     flex-direction: column;
   }
 
-  .log_particulier {
+  .logement_particulier {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
