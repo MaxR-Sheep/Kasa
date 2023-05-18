@@ -5,7 +5,7 @@ import Arrow from "../assets/arrow.png";
 import vectorPrevious from "../assets/Vectorprevious.png";
 import "../../styles/slideshow.css";
 
-function Carousel() {
+function Shideshow() {
   let { id } = useParams();
   useEffect(() => {
     if (id) {
@@ -70,4 +70,4 @@ function Carousel() {
   }
 }
 
-export default Carousel;
+export default Shideshow;
