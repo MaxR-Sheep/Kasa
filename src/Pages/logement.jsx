@@ -4,7 +4,7 @@ import Error from "./error";
 import { useEffect, useState } from "react";
 import Collapse from "../composant/collapse";
 import "../styles/logement.css";
-import Slidershow from "../composant/slideshow";
+import Slideshow from "../composant/slideshow";
 import Tags from "../composant/tags";
 import Rating from "../composant/star";
 import Particulier from "../composant/particulier";
@@ -28,7 +28,7 @@ function Logement() {
     <div>
       {Object.keys(logement).length !== 0 ? (
         <div>
-          <Slidershow /*ou Carousel */ />
+          <Slideshow /*ou Carousel */ />
           <article>
             <div className="logement_info">
               <div className="logement_titre">
