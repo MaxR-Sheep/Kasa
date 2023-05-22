@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/home";
-import About from "./pages/about";
-import Error from "./pages/error";
-import Header from "./composant/header";
-import Footer from "./composant/footer";
-import Logement from "./pages/logement";
-import "./styles/app.css";
+import Home from "./Pages/home";
+import About from "./Pages/about";
+import Error from "./Pages/error";
+import Header from "./Composant/Header";
+import Footer from "./Composant/Footer";
+import Logement from "./Pages/logement";
+import "./Styles/app.css";
 
 function App() {
   return (

@@ -1,4 +1,4 @@
-import "../../styles/tags.css";
+import "../../Styles/tags.css";
 
 function Tags({ text }) {
   return <div className="tags">{text}</div>;

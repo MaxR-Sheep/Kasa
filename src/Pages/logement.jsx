@@ -1,13 +1,13 @@
 import { useParams } from "react-router-dom";
 import logements from "../datas/logement.json";
-import Error from "./error";
+import Error from "./error/index";
 import { useEffect, useState } from "react";
-import Collapse from "../composant/collapse";
-import "../styles/logement.css";
-import Slideshow from "../composant/slideshow";
-import Tags from "../composant/tags";
-import Rating from "../composant/star";
-import Particulier from "../composant/particulier";
+import Collapse from "../Composant/collapse";
+import "../Styles/logement.css";
+import Slideshow from "../Composant/slideshow";
+import Tags from "../Composant/tags";
+import Rating from "../Composant/star";
+import Particulier from "../Composant/particulier";
 
 function Logement() {
   let { id } = useParams(); // useParams permet de récupere l'ID dans la barre url

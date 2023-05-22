@@ -1,4 +1,4 @@
-import "../../styles/particulier.css";
+import "../../Styles/particulier.css";
 
 function Particulier({ name, picture }) {
   return (

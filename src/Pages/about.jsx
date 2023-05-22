@@ -1,7 +1,7 @@
-import Banniere from "../composant/banniere";
-import Collapse from "../composant/collapse";
-import imgAbout from "../composant/assets/paysage_about.png";
-import "../styles/about.css";
+import Banniere from "../Composant/banniere";
+import Collapse from "../Composant/collapse";
+import imgAbout from "../Composant/Assets/paysage_about.png";
+import "../Styles/about.css";
 
 function About() {
   //utilisation de prop pour les collapses spécifique et modifiable

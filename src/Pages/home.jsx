@@ -1,7 +1,7 @@
-import "../styles/home.css";
-import home from "../composant/assets/home.png";
-import Location from "../composant/location";
-import Banniere from "../composant/banniere";
+import "../Styles/home.css";
+import home from "../Composant/Assets/home.png";
+import Location from "../Composant/location";
+import Banniere from "../Composant/banniere";
 
 function Home() {
   // tous les elements pour la page accueil

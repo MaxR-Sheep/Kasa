@@ -1,4 +1,4 @@
-import "../../styles/banniere.css";
+import "../../Styles/banniere.css";
 
 function Banniere({ img, text }) {
   return (

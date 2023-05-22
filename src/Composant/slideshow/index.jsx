@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import logements from "../../datas/logement.json";
 import { useParams } from "react-router-dom";
-import Arrow from "../assets/arrow.png";
-import vectorPrevious from "../assets/Vectorprevious.png";
-import "../../styles/slideshow.css";
+import Arrow from "../Assets/arrow.png";
+import vectorPrevious from "../Assets/Vectorprevious.png";
+import "../../Styles/slideshow.css";
 
 function Shideshow() {
   let { id } = useParams();

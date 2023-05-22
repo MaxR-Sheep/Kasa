@@ -1,7 +1,7 @@
 import React from "react";
-import StarEmpty from "../assets/star.png";
-import StarFull from "../assets/starfull.png";
-import "../../styles/star.css";
+import StarEmpty from "../Assets/star.png";
+import StarFull from "../Assets/starfull.png";
+import "../../Styles/star.css";
 
 function Rating({ value }) {
   const totalStars = 5;

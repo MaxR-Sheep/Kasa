@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "../../styles/collapse.css";
+import "../../Styles/collapse.css";
 
-import vector from "../assets/vector.png";
+import vector from "../Assets/vector.png";
 
 const StringComponent = ({ text }) => {
   return <p>{text}</p>;
